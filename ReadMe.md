@@ -1,8 +1,6 @@
 # SOC-AI 🛡️
 ### An Explainable Autonomous L1 Security Operations Center Analyst Platform
 
-> **Graduation Project** — Haliç University, Department of Software Engineering, June 2026  
-> **Author:** Gamzenur Danacı &nbsp;|&nbsp; **Advisor:** Dr. Mohanad Alayedi
 
 ---
 
