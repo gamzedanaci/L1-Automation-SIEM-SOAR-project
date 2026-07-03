@@ -1,0 +1,23 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Session Hijacking
+Severity: MEDIUM
+Risk Score: 58.38/100
+User: amanda81
+Source IP: 155.168.63.177
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: Device change detected
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 43.82
+- 6. Final hybrid risk score assigned: 58.38
+- 7. Automated action executed: Session Revocation
+- 8. L2 escalation ticket not required

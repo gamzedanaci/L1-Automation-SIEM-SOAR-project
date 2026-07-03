@@ -1,0 +1,24 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Session Hijacking
+Severity: HIGH
+Risk Score: 77.32/100
+User: david82
+Source IP: 39.104.199.251
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Device change detected
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 53.16
+- 6. Final hybrid risk score assigned: 77.32
+- 7. Automated action executed: Session Revocation
+- 8. L2 escalation ticket generated: SOC-AI-20260703124155161704-david82-3381dcb2

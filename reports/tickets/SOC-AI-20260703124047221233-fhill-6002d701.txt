@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124047221233-fhill-6002d701
+
+Ticket Title:
+[ESCALATION] [HIGH] Possible Session Hijacking - User [fhill] via [195.33.234.171]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+75.62/100
+
+AI Behavioral Anomaly Score:
+36.25/100
+
+ML Anomaly Flag:
+0
+
+
+Incident Description:
+At 2025-04-22 18:11:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 195.33.234.171 and associated with user account fhill.
+
+The event was classified as "Possible Session Hijacking" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 75.62 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 195.33.234.171
+- Location: Jamiemouth, Wallis and Futuna
+- Affected User: fhill
+- Incident Type: Possible Session Hijacking
+- ML Anomaly Score: 36.25
+- ML Anomaly Flag: 0
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2025-04-22 18:11:00
+- Rule-based reasoning: ['Device change detected', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'Blocked authentication attempt', 'ML anomaly model did not strongly confirm behavioral abnormality']
+- Recommended action: Terminate suspicious session, revoke session tokens, and request MFA re-authentication.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Session Revocation
+- Action Details: Active session revocation was simulated for user fhill.
+- Action Timestamp: 2026-07-03T12:40:47.220500+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:40:47.221376+00:00

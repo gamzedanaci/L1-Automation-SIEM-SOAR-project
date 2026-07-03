@@ -1,0 +1,22 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Geo Risk Authentication
+Severity: MEDIUM
+Risk Score: 58.21/100
+User: davidadams
+Source IP: 179.63.44.219
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 42.06
+- 6. Final hybrid risk score assigned: 58.21
+- 7. Automated action executed: Step-Up Authentication
+- 8. L2 escalation ticket not required

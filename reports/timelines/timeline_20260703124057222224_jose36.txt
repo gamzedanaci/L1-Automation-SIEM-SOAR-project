@@ -1,0 +1,21 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Brute Force Success
+Severity: MEDIUM
+Risk Score: 56.72/100
+User: jose36
+Source IP: 192.234.13.134
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: High number of failed login attempts
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 72.24
+- 6. Final hybrid risk score assigned: 56.72
+- 7. Automated action executed: Force Password Reset
+- 8. L2 escalation ticket not required

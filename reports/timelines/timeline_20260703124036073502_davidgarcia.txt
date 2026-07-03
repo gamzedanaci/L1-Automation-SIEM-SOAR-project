@@ -1,0 +1,23 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Expired Session Abuse
+Severity: MEDIUM
+Risk Score: 62.02/100
+User: davidgarcia
+Source IP: 145.33.96.91
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 35.25
+- 6. Final hybrid risk score assigned: 62.02
+- 7. Automated action executed: Session Revocation
+- 8. L2 escalation ticket not required

@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124040351690-campbellvalerie-831e0f03
+
+Ticket Title:
+[ESCALATION] [HIGH] Brute Force Attempt - User [campbellvalerie] via [1.221.151.131]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+81.27/100
+
+AI Behavioral Anomaly Score:
+47.69/100
+
+ML Anomaly Flag:
+0
+
+
+Incident Description:
+At 2025-03-21 23:24:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 1.221.151.131 and associated with user account campbellvalerie.
+
+The event was classified as "Brute Force Attempt" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 81.27 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 1.221.151.131
+- Location: North Jonathan, Slovakia (Slovak Republic)
+- Affected User: campbellvalerie
+- Incident Type: Brute Force Attempt
+- ML Anomaly Score: 47.69
+- ML Anomaly Flag: 0
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2025-03-21 23:24:00
+- Rule-based reasoning: ['High number of failed login attempts', 'Login attempt occurred during unusual hours', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'Blocked authentication attempt', 'ML anomaly model did not strongly confirm behavioral abnormality']
+- Recommended action: Temporarily block source IP for 15 minutes and enforce CAPTCHA or account lockout.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Temporary IP Block
+- Action Details: Source IP 1.221.151.131 was added to simulated block list.
+- Action Timestamp: 2026-07-03T12:40:40.351070+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:40:40.351830+00:00

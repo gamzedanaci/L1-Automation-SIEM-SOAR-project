@@ -1,0 +1,23 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Expired Session Abuse
+Severity: MEDIUM
+Risk Score: 59.88/100
+User: zwells
+Source IP: 177.71.34.200
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 58.76
+- 6. Final hybrid risk score assigned: 59.88
+- 7. Automated action executed: Session Revocation
+- 8. L2 escalation ticket not required

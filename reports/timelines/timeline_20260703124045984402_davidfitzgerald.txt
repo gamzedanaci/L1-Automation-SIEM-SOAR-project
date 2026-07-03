@@ -1,0 +1,22 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Potential MFA Bypass
+Severity: MEDIUM
+Risk Score: 58.77/100
+User: davidfitzgerald
+Source IP: 145.190.170.138
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 47.74
+- 6. Final hybrid risk score assigned: 58.77
+- 7. Automated action executed: MFA Enforcement
+- 8. L2 escalation ticket not required

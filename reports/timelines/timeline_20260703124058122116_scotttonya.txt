@@ -1,0 +1,22 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Expired Session Abuse
+Severity: MEDIUM
+Risk Score: 55.26/100
+User: scotttonya
+Source IP: 202.176.58.107
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: Blocked authentication attempt
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 57.57
+- 6. Final hybrid risk score assigned: 55.26
+- 7. Automated action executed: Session Revocation
+- 8. L2 escalation ticket not required

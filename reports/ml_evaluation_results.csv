@@ -1,0 +1,2 @@
+Total Authentication Logs,Normal Events,ML Anomalies Detected,Contamination Rate (%),Average ML Anomaly Score,Minimum ML Anomaly Score,Maximum ML Anomaly Score,Isolation Forest Normal Label Count,Isolation Forest Anomaly Label Count,Model,Number of Estimators,Configured Contamination,Random State
+50000,46000,4000,8.0,37.08,0.0,100.0,46000,4000,Isolation Forest,100,0.08,42

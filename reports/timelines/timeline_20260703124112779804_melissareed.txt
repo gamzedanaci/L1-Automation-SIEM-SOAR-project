@@ -1,0 +1,23 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Brute Force Success
+Severity: HIGH
+Risk Score: 79.69/100
+User: melissareed
+Source IP: 131.111.211.228
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: High number of failed login attempts
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 76.86
+- 6. Final hybrid risk score assigned: 79.69
+- 7. Automated action executed: Force Password Reset
+- 8. L2 escalation ticket generated: SOC-AI-20260703124112777199-melissareed-b9a62d4c

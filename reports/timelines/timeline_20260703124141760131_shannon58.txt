@@ -1,0 +1,24 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Brute Force Success
+Severity: HIGH
+Risk Score: 85.79/100
+User: shannon58
+Source IP: 180.152.28.177
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: High number of failed login attempts
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 47.93
+- 6. Final hybrid risk score assigned: 85.79
+- 7. Automated action executed: Force Password Reset
+- 8. L2 escalation ticket generated: SOC-AI-20260703124141756972-shannon58-24c8c6c1

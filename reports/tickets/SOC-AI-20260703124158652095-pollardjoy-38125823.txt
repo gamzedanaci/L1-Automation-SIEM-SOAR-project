@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124158652095-pollardjoy-38125823
+
+Ticket Title:
+[ESCALATION] [HIGH] Possible Brute Force Success - User [pollardjoy] via [131.164.37.32]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+78.7/100
+
+AI Behavioral Anomaly Score:
+67.05/100
+
+ML Anomaly Flag:
+0
+
+
+Incident Description:
+At 2026-02-01 16:33:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 131.164.37.32 and associated with user account pollardjoy.
+
+The event was classified as "Possible Brute Force Success" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 78.7 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 131.164.37.32
+- Location: South Todd, American Samoa
+- Affected User: pollardjoy
+- Incident Type: Possible Brute Force Success
+- ML Anomaly Score: 67.05
+- ML Anomaly Flag: 0
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2026-02-01 16:33:00
+- Rule-based reasoning: ['High number of failed login attempts', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'ML anomaly model did not strongly confirm behavioral abnormality']
+- Recommended action: Force password reset, terminate active sessions, and escalate to L2 analyst.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Force Password Reset
+- Action Details: Password reset was simulated for user pollardjoy.
+- Action Timestamp: 2026-07-03T12:41:58.651209+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:41:58.652276+00:00

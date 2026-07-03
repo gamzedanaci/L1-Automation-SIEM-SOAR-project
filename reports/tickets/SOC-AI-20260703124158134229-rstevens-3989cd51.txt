@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124158134229-rstevens-3989cd51
+
+Ticket Title:
+[ESCALATION] [HIGH] Possible Session Hijacking - User [rstevens] via [204.12.117.201]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+77.42/100
+
+AI Behavioral Anomaly Score:
+73.56/100
+
+ML Anomaly Flag:
+1
+
+
+Incident Description:
+At 2026-01-31 01:02:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 204.12.117.201 and associated with user account rstevens.
+
+The event was classified as "Possible Session Hijacking" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 77.42 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 204.12.117.201
+- Location: North Mauriceborough, San Marino
+- Affected User: rstevens
+- Incident Type: Possible Session Hijacking
+- ML Anomaly Score: 73.56
+- ML Anomaly Flag: 1
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2026-01-31 01:02:00
+- Rule-based reasoning: ['Login attempt occurred during unusual hours', 'Device change detected', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'ML anomaly model confirmed abnormal authentication behavior']
+- Recommended action: Terminate suspicious session, revoke session tokens, and request MFA re-authentication.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Session Revocation
+- Action Details: Active session revocation was simulated for user rstevens.
+- Action Timestamp: 2026-07-03T12:41:58.133508+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:41:58.134405+00:00

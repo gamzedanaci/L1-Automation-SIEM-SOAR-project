@@ -1,0 +1,23 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Brute Force Success
+Severity: HIGH
+Risk Score: 75.82/100
+User: zanderson
+Source IP: 204.27.224.230
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: High number of failed login attempts
+- 4. SOC reasoning: MFA is disabled
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model did not strongly confirm behavioral abnormality
+- 5. ML anomaly score calculated: 38.17
+- 6. Final hybrid risk score assigned: 75.82
+- 7. Automated action executed: Force Password Reset
+- 8. L2 escalation ticket generated: SOC-AI-20260703124049293204-zanderson-b58c08b3

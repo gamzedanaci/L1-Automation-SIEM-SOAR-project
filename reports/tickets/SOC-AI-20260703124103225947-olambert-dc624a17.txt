@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124103225947-olambert-dc624a17
+
+Ticket Title:
+[ESCALATION] [HIGH] Brute Force Attempt - User [olambert] via [59.158.19.95]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+84.23/100
+
+AI Behavioral Anomaly Score:
+32.26/100
+
+ML Anomaly Flag:
+0
+
+
+Incident Description:
+At 2025-07-05 09:08:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 59.158.19.95 and associated with user account olambert.
+
+The event was classified as "Brute Force Attempt" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 84.23 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 59.158.19.95
+- Location: Lake Maryhaven, Myanmar
+- Affected User: olambert
+- Incident Type: Brute Force Attempt
+- ML Anomaly Score: 32.26
+- ML Anomaly Flag: 0
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2025-07-05 09:08:00
+- Rule-based reasoning: ['High number of failed login attempts', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'Blocked authentication attempt', 'ML anomaly model did not strongly confirm behavioral abnormality']
+- Recommended action: Temporarily block source IP for 15 minutes and enforce CAPTCHA or account lockout.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Temporary IP Block
+- Action Details: Source IP 59.158.19.95 was added to simulated block list.
+- Action Timestamp: 2026-07-03T12:41:03.225284+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:41:03.226094+00:00

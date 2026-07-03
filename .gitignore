@@ -1,0 +1,14 @@
+# Python önbellek dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sanal Ortam (Virtual Environment)
+.venv/
+venv/
+ENV/
+
+
+
+# Büyük veri setleri veya anomali/aksiyon logları çok büyükse (isteğe bağlı)
+# reports/large_logs/git stst

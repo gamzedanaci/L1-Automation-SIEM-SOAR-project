@@ -1,0 +1,24 @@
+SOC-AI INCIDENT WORKFLOW TIMELINE
+========================================
+
+Incident Type: Possible Brute Force Success
+Severity: HIGH
+Risk Score: 78.51/100
+User: rpowell
+Source IP: 190.224.123.13
+
+Workflow Steps:
+- 1. Raw authentication log ingested
+- 2. Log normalized and parsed
+- 3. Features extracted
+- 4. SOC reasoning: High number of failed login attempts
+- 4. SOC reasoning: Login attempt occurred during unusual hours
+- 4. SOC reasoning: Device change detected
+- 4. SOC reasoning: Expired token usage detected
+- 4. SOC reasoning: Suspicious activity flag detected
+- 4. SOC reasoning: High threat level detected
+- 4. SOC reasoning: ML anomaly model confirmed abnormal authentication behavior
+- 5. ML anomaly score calculated: 68.77
+- 6. Final hybrid risk score assigned: 78.51
+- 7. Automated action executed: Force Password Reset
+- 8. L2 escalation ticket generated: SOC-AI-20260703124039495016-rpowell-b37ccfa4

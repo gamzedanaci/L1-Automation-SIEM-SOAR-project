@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124054145885-danajenkins-f1d240c2
+
+Ticket Title:
+[ESCALATION] [HIGH] Expired Session Abuse - User [danajenkins] via [4.39.53.61]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+77.94/100
+
+AI Behavioral Anomaly Score:
+59.4/100
+
+ML Anomaly Flag:
+0
+
+
+Incident Description:
+At 2025-05-24 04:02:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 4.39.53.61 and associated with user account danajenkins.
+
+The event was classified as "Expired Session Abuse" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 77.94 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 4.39.53.61
+- Location: North Jonathan, Senegal
+- Affected User: danajenkins
+- Incident Type: Expired Session Abuse
+- ML Anomaly Score: 59.4
+- ML Anomaly Flag: 0
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2025-05-24 04:02:00
+- Rule-based reasoning: ['Login attempt occurred during unusual hours', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'Blocked authentication attempt', 'ML anomaly model did not strongly confirm behavioral abnormality']
+- Recommended action: Invalidate expired tokens and investigate token reuse attempts.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Session Revocation
+- Action Details: Active session revocation was simulated for user danajenkins.
+- Action Timestamp: 2026-07-03T12:40:54.145249+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:40:54.146055+00:00

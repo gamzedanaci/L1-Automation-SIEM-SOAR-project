@@ -1,0 +1,72 @@
+
+SOC INCIDENT TICKET: #SOC-AI-20260703124042549436-timothy27-c9b460e5
+
+Ticket Title:
+[ESCALATION] [HIGH] Possible Session Hijacking - User [timothy27] via [54.43.100.143]
+
+Priority:
+HIGH
+
+Assigned Group:
+L2 SOC Incident Response Team
+
+Detection Source:
+SOC-AI Autonomous L1 Engine
+
+Detection Method:
+Hybrid Rule-Based + ML Behavioral Analysis
+
+Overall Incident Risk:
+76.89/100
+
+AI Behavioral Anomaly Score:
+57.22/100
+
+ML Anomaly Flag:
+1
+
+
+Incident Description:
+At 2025-04-01 04:52:00, the SOC-AI platform detected a suspicious authentication event originating from IP address 54.43.100.143 and associated with user account timothy27.
+
+The event was classified as "Possible Session Hijacking" based on rule-based SOC logic, behavioral anomaly scoring, and contextual authentication indicators. The incident received a risk score of 76.89 and severity level HIGH.
+
+Indicators of Compromise (IoCs):
+- Source IP: 54.43.100.143
+- Location: Bellfort, Venezuela
+- Affected User: timothy27
+- Incident Type: Possible Session Hijacking
+- ML Anomaly Score: 57.22
+- ML Anomaly Flag: 1
+
+
+SIEM Correlation Evidence:
+- Authentication event timestamp: 2025-04-01 04:52:00
+- Rule-based reasoning: ['Login attempt occurred during unusual hours', 'Device change detected', 'MFA is disabled', 'Expired token usage detected', 'Suspicious activity flag detected', 'High threat level detected', 'Blocked authentication attempt', 'ML anomaly model confirmed abnormal authentication behavior']
+- Recommended action: Terminate suspicious session, revoke session tokens, and request MFA re-authentication.
+
+
+Automated First Response Actions Executed:
+- Action Executed: True
+- Action Type: Session Revocation
+- Action Details: Active session revocation was simulated for user timothy27.
+- Action Timestamp: 2026-07-03T12:40:42.548749+00:00
+
+
+L2 Escalation Request:
+Please review the affected user account, source IP address, authentication history, and any post-authentication activity. If additional compromise indicators are found, proceed with endpoint investigation, session review, and account containment.
+
+
+Audit Trail:
+1. Raw authentication log ingested
+2. Log normalized and parsed
+3. Features extracted
+4. Rule-based SOC reasoning applied
+5. ML anomaly score calculated
+6. Incident risk score assigned
+7. Automated first response action executed
+8. L2 escalation ticket generated
+
+
+Generated At:
+2026-07-03T12:40:42.549581+00:00
