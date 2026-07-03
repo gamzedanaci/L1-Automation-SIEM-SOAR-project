@@ -3,8 +3,6 @@
 
 # SOC-AI Prototype
 
-# SOC-AI Prototype
-
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://l1-automation-siem-soar-projectgit-hcebw3hn65rul7trwavpgo.streamlit.app/)
 
 ## Overview
